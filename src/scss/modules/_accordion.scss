@@ -6,6 +6,7 @@
   font-family: "Lexend";
   font-weight: 600;
   font-size: 17px;
+  line-height: 26px;
   color: var(--primary);
   
   border: none;
@@ -51,4 +52,11 @@
 
   transform: rotate(-180deg);
   transition: 0.3s ease;
+}
+
+@media (min-width:1200px) {
+  .accordion,
+  .accordion-text {
+    font-size: 18px;
+  }
 }
