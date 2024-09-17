@@ -108,6 +108,39 @@ input {
   border-radius: var(--base-radius);
 }
 
+.highlight-link {
+  position: relative; 
+  display: inline-block; 
+
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  cursor: pointer;
+}
+
+.highlight-link::after {
+  content: '';
+  position: absolute; 
+  width: 103%; 
+  height: 100%; 
+  left: -1.5%;
+  top: 0;
+  z-index: -1;
+
+  background: var(--secondary);
+  opacity: 0.3;
+
+  transform: scaleX(0); 
+  transform-origin: right; 
+  transition: transform 0.3s ease; 
+}
+
+.highlight-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; 
+}
+
 @media (min-width:768px) {
   body {
     margin: 0 40px;
