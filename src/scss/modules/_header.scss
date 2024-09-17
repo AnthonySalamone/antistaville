@@ -7,11 +7,16 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  .header-logo {
+    z-index: 2;
+  }
+
   .desktop-nav, 
   .desktop-header-button {
     display: none;
   }
   .mobile-header-button {
+    z-index: 2;
     a {
       margin-left: 24px;
     }
@@ -21,7 +26,7 @@ header {
 .burger-menu-overlay {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   background: var(--secondary);
 
   opacity: 0;
@@ -37,6 +42,7 @@ header {
 }
 
 .burger-menu {
+  position: absolute;
   margin-top: 100px;
   pointer-events: none;
 
@@ -85,7 +91,7 @@ header {
     .desktop-nav ul{
       display: flex;
       flex-direction: row;
-      a {
+      li {
         position: relative;
         margin-right: 24px;
 
