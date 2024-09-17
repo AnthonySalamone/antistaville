@@ -1,0 +1,53 @@
+.accordion {
+  padding: 12px 0;
+  width: 100%;
+  text-align: left;
+  
+  font-family: "Lexend";
+  font-weight: 600;
+  font-size: 17px;
+  
+  border: none;
+  border-top: 1px solid var(--primary-separation);
+  background: var(--neutral);
+  
+  cursor: pointer;
+  transition: 0.4s;
+  
+  &:last-of-type {
+    border-bottom: 0px;
+  }
+}
+
+
+.accordion-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+
+  &:last-of-type {
+    border-bottom: 1px solid var(--primary-separation);
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.accordion:after {
+  content: url('../img/Icon/Navigation/Chevron-down.svg'); 
+  font-size: 13px;
+  float: right;
+  margin-right: 3px;
+
+  transition: 0.3s ease;
+
+}
+
+.active:after {
+  content: url('../img/Icon/Navigation/Chevron-down.svg'); 
+
+  transform: rotate(-180deg);
+  transition: 0.3s ease;
+}
