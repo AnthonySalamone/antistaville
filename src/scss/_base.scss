@@ -60,6 +60,9 @@ ul,ol {
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: inherit;
+  font-size: inherit;
+
+  font-family: "Lexend"
 }
 
 /* ====================================
@@ -72,6 +75,11 @@ body {
 
 main {
   border-top: 1px solid var(--primary-separation);
+}
+
+p {
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .button {
