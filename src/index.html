@@ -10,7 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header>
+      <a href="#">
+        <img src="img/Antistaville_logo.svg" alt="Antistaville.">
+      </a>
+      <nav class="desktop-nav">
+        <ul>
+          <a href="#"><li>Administration et autorités</li></a>
+          <a href="#"><li>Vie pratique</li></a>
+          <a href="#"><li>Culture, sport et loisirs</li></a>
+          <a href="#"><li>Agenda</li></a>
+          <a href="#"><li>Actualités</li></a>
+        </ul>
+      </nav>
+      <div class="desktop-header-button">
+        <input class="search-input" placeholder="Rechercher" type="text">
+        <a class="button" href="#">Guichet</a>
+      </div>
+
+      <div class="mobile-header-button">
+        <a class="search-icon" id="mobileSearchIcon" href="#">
+          <img src="img/Icon/Navigation/Search.svg" alt="icône rechercher">
+        </a>
+        <a href="#">
+          <img src="img/Icon/Navigation/Menu.svg" id="burgerIcon" alt="icône burger-menu">
+        </a>
+      </div>
+
+    </header>
+    <div class="burger-menu-overlay" id="burgerOverlay"></div>
+    <div class="burger-menu" id="burgerMenu">
+      <input class="search-input" placeholder="Rechercher" type="text">
+      <nav class="mobile-nav">
+        <ul>
+          <a href="#"><li>Administration et autorités</li></a>
+          <a href="#"><li>Vie pratique</li></a>
+          <a href="#"><li>Culture, sport et loisirs</li></a>
+          <a href="#"><li>Agenda</li></a>
+          <a href="#"><li>Actualités</li></a>
+        </ul>
+      </nav>
+    </div>
+
 
     <script src="js/main.js" type="module"></script>
   </body>
