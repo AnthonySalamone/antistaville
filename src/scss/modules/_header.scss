@@ -79,7 +79,7 @@ header {
 }
 
 
-@media (min-width:1350px) {
+@media (min-width:1200px) {
   header {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -92,6 +92,8 @@ header {
     .desktop-nav ul{
       display: flex;
       flex-direction: row;
+
+      font-size: 13px;
 
       li {
         position: relative;
@@ -147,3 +149,11 @@ header {
     display: none;
   }
 }
+
+@media (min-width:1350px) {
+  header {
+    .desktop-nav ul{
+      font-size: 17px;
+    }
+  }
+}  
