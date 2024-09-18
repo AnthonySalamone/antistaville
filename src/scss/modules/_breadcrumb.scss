@@ -1,6 +1,8 @@
 .breadcrumb {
   margin-top: 24px;
+
   font-size: 16px;
+
   ul {
     display: flex;
     flex-direction: row;
@@ -8,11 +10,14 @@
 
   li {
     display: none;
+
     &:nth-child(2) {
       display: block;
+
       &::after {
         content: "";
       }
+
       &::before {
         content: url('../img/Icon/Navigation/Chevron-left.svg');
         margin-right: 6px;
@@ -34,9 +39,11 @@
   .breadcrumb {
     li {
       display: block;
+
       &:nth-child(2)::after {
         content: url('../img/Icon/Navigation/Chevron-right.svg');
       }
+
       &:nth-child(2)::before {
         content: "";
         margin: 0;
@@ -50,9 +57,11 @@
   .breadcrumb {
     margin-top: 16px;
     color: var(--primary-light);
+
     li {
       transition: 0.3s ease;
     }
+    
     li:hover {
       color: var(--primary);
       transition: 0.3s ease;

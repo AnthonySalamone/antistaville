@@ -30,7 +30,6 @@ mobileSearchIcon.addEventListener('click', toggleMenu);
 
 
 //==================ACCORDION=========================================//
-//accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 

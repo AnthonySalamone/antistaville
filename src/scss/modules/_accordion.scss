@@ -25,11 +25,13 @@
 .accordion-text {
   max-height: 0;
   overflow: hidden;
+
   transition: max-height 0.3s ease-out;
 
   &:last-of-type {
-    border-bottom: 1px solid var(--primary-separation);
     margin-bottom: 40px;
+
+    border-bottom: 1px solid var(--primary-separation);
   }
 
   p {
@@ -39,12 +41,12 @@
 
 .accordion:after {
   content: url('../img/Icon/Navigation/Chevron-down.svg'); 
-  font-size: 13px;
-  float: right;
   margin-right: 3px;
+  float: right;
+  
+  font-size: 13px;
 
   transition: 0.3s ease;
-
 }
 
 .accordion.active:after {
