@@ -4,21 +4,29 @@ const burgerIcon = document.getElementById('burgerIcon');
 const burgerMenu = document.getElementById('burgerMenu');
 const burgerOverlay = document.getElementById('burgerOverlay');
 const mobileSearchIcon = document.getElementById('mobileSearchIcon');
+const body = document.body;
 
-burgerIcon.addEventListener('click', function() {
+function toggleMenu() {
   burgerMenu.classList.toggle('active');
   burgerOverlay.classList.toggle('active');
-});
+  
+  if (burgerMenu.classList.contains('active')) {
+    body.classList.add('no-scroll');
+  } else {
+    body.classList.remove('no-scroll');
+  }
+}
+
+burgerIcon.addEventListener('click', toggleMenu);
 
 burgerOverlay.addEventListener('click', function() {
   burgerMenu.classList.remove('active');
   burgerOverlay.classList.remove('active');
+  body.classList.remove('no-scroll'); // Réactiver le défilement
 });
 
-mobileSearchIcon.addEventListener('click', function() {
-  burgerMenu.classList.toggle('active');
-  burgerOverlay.classList.toggle('active');
-});
+mobileSearchIcon.addEventListener('click', toggleMenu);
+
 
 
 //==================ACCORDION=========================================//

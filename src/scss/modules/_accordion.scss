@@ -47,7 +47,7 @@
 
 }
 
-.active:after {
+.accordion.active:after {
   content: url('../img/Icon/Navigation/Chevron-down.svg'); 
 
   transform: rotate(-180deg);

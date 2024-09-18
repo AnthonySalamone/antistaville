@@ -24,7 +24,7 @@ header {
 }
 
 .burger-menu-overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 0;
   background: var(--secondary);
@@ -42,7 +42,7 @@ header {
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
   margin-top: 100px;
   pointer-events: none;
 
