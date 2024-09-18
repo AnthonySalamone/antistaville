@@ -76,13 +76,10 @@ header {
 }
 
 
-@media (min-width:768px) {
-  
-}
-
 @media (min-width:1200px) {
   header {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     .desktop-nav,
     .desktop-header-button {

@@ -69,8 +69,14 @@ h1,h2,h3,h4,h5,h6 {
 // base rules
 // ==================================== */
 
-body {
+header,
+main,
+.burger-menu {
   margin: 0 16px;
+}
+
+footer {
+  padding: 56px 16px 16px 16px;
 }
 
 .no-scroll {
@@ -100,6 +106,20 @@ p {
   &:hover {
     background: var(--secondary);
   }
+
+  &.button-neutral {
+    background: var(--neutral);
+    color: var(--primary);
+    border: solid 2px var(--primary-separation);
+
+    transition: 0.3 ease;
+
+    &:hover {
+      background: var(--primary-background);
+
+      transition: 0.3 ease;
+    }
+  }
 }
 
 input {
@@ -110,6 +130,9 @@ input {
   font-size: 16px;
   line-height: 24px;
   border-radius: var(--base-radius);
+  &:focus {
+    outline: none;
+  }
 }
 
 .highlight-link {
@@ -146,13 +169,22 @@ input {
 }
 
 @media (min-width:768px) {
-  body {
-    margin: 0 40px;
+  header,
+  main {
+    margin: 0 40px 24px 40px;
+  }
+  footer {
+    padding: 56px 40px 16px 40px;
   }
 }
 
 @media (min-width:1200px) {
-  body {
+  main,
+  header {
     margin: 0 78px;
+  }
+
+  footer {
+    padding: 80px 78px 24px 78px;
   }
 }

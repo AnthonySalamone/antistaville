@@ -1,0 +1,155 @@
+footer {
+  margin-top: 56px;
+
+  background: var(--primary-background);
+
+  .footer-separation {
+    height: 1.5px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    background: var(--primary-separation);
+  }
+  
+
+  section {
+    margin-bottom: 40px;
+
+    div {
+      margin-bottom: 50px;
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+
+  li {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .footer-navigation nav {
+    font-family: "Lexend";
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+  }
+
+  .footer-newsletter {
+    padding: 16px;
+
+    background: var(--neutral);
+    border-radius: var(--base-radius);
+
+    h2 {
+
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.3px;
+    }
+
+    input {
+      width: 100%;
+      margin: 24px 0 16px 0;
+      padding: 7px 14px;
+      border: none;
+      background: var(--primary-background);
+    }
+  }
+
+  .footer-contact a {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  .footer-schedule .schedule-grid {
+    display: flex;
+    flex-direction: row;
+    
+    p {
+      margin-right: 100px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .footer-social-media a {
+    margin-right: 24px;
+
+    &:first-of-type {
+      margin-left: 12px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .footer-bottom-section {
+    color: var(--primary-light);
+
+    div {
+      margin-bottom: 16px;
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--primary-separation);
+    }
+
+    .footer-legal a {
+      margin-right: 16px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+@media (min-width:1200px) {
+  footer {
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer-newsletter {
+      width: 400px;
+  
+      input {
+        width: 60%;
+      }
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
